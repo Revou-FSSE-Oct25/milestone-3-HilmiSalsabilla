@@ -603,7 +603,7 @@ export default function DashboardPage() {
                   </label>
                   <input
                     type={type}
-                    value={(formData as Record<string, unknown>)[key] as string}
+                    value={String(formData[key as keyof typeof formData])}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
