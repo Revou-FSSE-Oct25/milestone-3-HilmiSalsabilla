@@ -583,30 +583,42 @@ export default function DashboardPage() {
             <div style={{ padding: "24px", display: "flex", flexDirection: "column", gap: "20px" }}>
               {/* Title */}
               <div>
-                <label style={{...}}>Title *</label>
-                <input type="text" value={formData.title}
-                  onChange={(e) => setFormData({ ...formData, title: e.target.value })} />
+                <label style={{ display: "block", fontSize: "11px", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--color-muted)", marginBottom: "8px" }}>
+                  Title *
+                </label>
+                <input type="text" value={formData.title} onChange={(e) => setFormData({ ...formData, title: e.target.value })} placeholder="Product name"
+                  style={{ width: "100%", background: "var(--color-bg)", border: "1px solid var(--color-border)", color: "var(--color-text)", padding: "11px 14px", fontSize: "14px", outline: "none", fontFamily: "var(--font-body)", transition: "border-color 0.2s" }}
+                  onFocus={(e) => (e.target.style.borderColor = "var(--color-accent)")} onBlur={(e) => (e.target.style.borderColor = "var(--color-border)")} />
               </div>
 
               {/* Category */}
               <div>
-                <label style={{...}}>Category *</label>
-                <input type="text" value={formData.category}
-                  onChange={(e) => setFormData({ ...formData, category: e.target.value })} />
+                <label style={{ display: "block", fontSize: "11px", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--color-muted)", marginBottom: "8px" }}>
+                  Category *
+                </label>
+                <input type="text" value={formData.category} onChange={(e) => setFormData({ ...formData, category: e.target.value })} placeholder="electronics, jewelery, etc."
+                  style={{ width: "100%", background: "var(--color-bg)", border: "1px solid var(--color-border)", color: "var(--color-text)", padding: "11px 14px", fontSize: "14px", outline: "none", fontFamily: "var(--font-body)", transition: "border-color 0.2s" }}
+                  onFocus={(e) => (e.target.style.borderColor = "var(--color-accent)")} onBlur={(e) => (e.target.style.borderColor = "var(--color-border)")} />
               </div>
 
               {/* Price */}
               <div>
-                <label style={{...}}>Price *</label>
-                <input type="number" value={formData.price}
-                  onChange={(e) => setFormData({ ...formData, price: parseFloat(e.target.value) || 0 })} />
+                <label style={{ display: "block", fontSize: "11px", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--color-muted)", marginBottom: "8px" }}>
+                  Price *
+                </label>
+                <input type="number" value={formData.price} onChange={(e) => setFormData({ ...formData, price: parseFloat(e.target.value) || 0 })} placeholder="0.00"
+                  style={{ width: "100%", background: "var(--color-bg)", border: "1px solid var(--color-border)", color: "var(--color-text)", padding: "11px 14px", fontSize: "14px", outline: "none", fontFamily: "var(--font-body)", transition: "border-color 0.2s" }}
+                  onFocus={(e) => (e.target.style.borderColor = "var(--color-accent)")} onBlur={(e) => (e.target.style.borderColor = "var(--color-border)")} />
               </div>
 
               {/* Image URL */}
               <div>
-                <label style={{...}}>Image URL</label>
-                <input type="text" value={formData.image}
-                  onChange={(e) => setFormData({ ...formData, image: e.target.value })} />
+                <label style={{ display: "block", fontSize: "11px", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--color-muted)", marginBottom: "8px" }}>
+                  Image URL
+                </label>
+                <input type="text" value={formData.image} onChange={(e) => setFormData({ ...formData, image: e.target.value })} placeholder="https://..."
+                  style={{ width: "100%", background: "var(--color-bg)", border: "1px solid var(--color-border)", color: "var(--color-text)", padding: "11px 14px", fontSize: "14px", outline: "none", fontFamily: "var(--font-body)", transition: "border-color 0.2s" }}
+                  onFocus={(e) => (e.target.style.borderColor = "var(--color-accent)")} onBlur={(e) => (e.target.style.borderColor = "var(--color-border)")} />
               </div>
 
               {/* Description */}
