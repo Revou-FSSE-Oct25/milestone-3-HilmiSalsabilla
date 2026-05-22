@@ -7,6 +7,7 @@ A full-stack e-commerce platform built with **Next.js 15**, **React 19**, and **
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Live Demo](https://milestone-3-hilmisalsabilla.vercel.app/)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -115,6 +116,8 @@ revoshop/
 ---
 
 ## Preview
+
+[Live Demo at Vercel](https://milestone-3-hilmisalsabilla.vercel.app/)
 
 ### Landing Page
 ![Landing Page Preview](./revoshop/assets/landing-page.webp)
